@@ -2,19 +2,41 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Peluche magique</title>
+  <title>Surprise de la peluche</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #fffbe6;
+    }
+    h1 {
+      color: #ff4081;
+    }
+    img {
+      max-width: 80%;
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
+
+<h1>🎁 Surprise de la peluche 🎁</h1>
+<p>Regarde ton message du jour !</p>
+<img id="image" src="" alt="Image surprise">
+
 <script>
-const urls = [
-  "https://aeliaaaa.github.io/Peluche-nfc/IMG_0291.jpeg",
-  "https://aeliaaaa.github.io/Peluche-nfc/IMG_0291.jpeg"
-];
+  // Remplace ces URLs par tes propres images publiques
+  const urls = [
+    "https://aeliaaaa.github.io/Peluche-nfc/IMG_0291.JPEG"
+  ];
 
-const randomIndex = Math.floor(Math.random() * urls.length);
-document.getElementById("image").src =
-  urls[randomIndex] + "?v=" + new Date().getTime();
-
+  // Choisir une image aléatoire
+  const randomIndex = Math.floor(Math.random() * urls.length);
+  document.getElementById("image").src = urls[randomIndex];
 </script>
+
 </body>
 </html>
